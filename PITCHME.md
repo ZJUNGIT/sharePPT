@@ -1,7 +1,12 @@
-# git使用介绍
-![](assets/img/circle.png)
+@snap[west span-50]
+### git使用介绍
+@snapend
 
----?color=linear-gradient(90deg, #2e70ba 100%)
+@snap[east span-50]
+![](assets/img/circle.png)
+@snapend
+
+---?color=linear-gradient(90deg, #2e70ba)
 
 ## Add Some Slide Candy
 
