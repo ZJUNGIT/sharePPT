@@ -6,7 +6,7 @@
 ![](assets/img/circle.png)
 @snapend
 
----?color=linear-gradient(90deg, #2e70ba)
+---?color=#2e70ba
 
 ## Add Some Slide Candy
 
