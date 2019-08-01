@@ -1,6 +1,6 @@
 ---?color=linear-gradient(180deg, #2e70ba 75%, #2e70ba 25%)
-@snap[north-west h4-white span-50]
-### git使用介绍
+@snap[west h4-white span-50]
+#### git使用介绍
 @snapend
 
 @snap[east span-50]
