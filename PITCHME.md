@@ -1,6 +1,8 @@
 ---?color=linear-gradient(180deg, #2e70ba 75%, #2e70ba 25%)
 @snap[west h3-white span-50]
-### git使用介绍
+
+### git 使用介绍
+
 @snapend
 
 @snap[east span-50]
@@ -9,51 +11,24 @@
 
 ---
 
-## Add Some Slide Candy
+## Git 介绍
 
-![](assets/img/presentation.png)
+- 1.什么是 Git：
 
----?color=linear-gradient(180deg, white 75%, black 25%)
-@title[Customize Slide Layout]
+  Git 是一款免费的、开源的、分布式的版本控制系统。旨在快速高效地处理无论规模大小的任何软件工程。
 
-@snap[west span-50]
-## Customize the Layout
-@snapend
+- 2.Git 优点
 
-@snap[east span-50]
-![](assets/img/presentation.png)
-@snapend
+  > 1.版本库本地化，支持离线提交，相对独立不影响协同开发。每个开发者都拥有自己的版本控制库，在自己的版本库上可以任意的执行提交代码、创建分支等行为。
 
-@snap[south span-100 text-white]
-Snap Layouts let you create custom slide designs directly within your markdown.
-@snapend
+  > 2.更少的“仓库污染”。git 对于每个工程只会产生一个.git 目录，这个工程所有的版本控制信息都在这个目录中，不会像 SVN 那样在每个目录下都产生.svn 目录。
 
----?color=linear-gradient(90deg, #5384AD 65%, white 35%)
-@title[Add A Little Imagination]
+  > 3.把内容按元数据方式存储，完整克隆版本库。所有版本信息位于.git 目录中，它是处于你的机器上的一个克隆版的版本库，它拥有中心版本库上所有的东西，例如标签、分支、版本记录等。
 
-@snap[north-west h4-white]
-#### And start presenting...
-@snapend
+  > 4.支持快速切换分支方便合并，比较合并性能好。在同一目录下即可切换不同的分支，方便合并，且合并文件速度比 SVN 快。
 
-@snap[west span-55]
-@ul[spaced text-white]
-- You will be amazed
-- What you can achieve
-- *With a little imagination...*
-- And **GitPitch Markdown**
-@ulend
-@snapend
+  > 5.分布式版本库，无单点故障，内容完整性好。内容存储使用的是 SHA-1 哈希算法。这能确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。
 
-@snap[east span-45]
-@img[shadow](assets/img/conference.png)
-@snapend
+  ---
 
----?image=assets/img/presenter.jpg
-
-@snap[north span-100 h2-white]
-## Now It's Your Turn
-@snapend
-
-@snap[south span-100 text-06]
-[Click here to jump straight into the interactive feature guides in the GitPitch Docs @fa[external-link]](https://gitpitch.com/docs/getting-started/tutorial/)
-@snapend
+  ## Git 文件的三种状态
