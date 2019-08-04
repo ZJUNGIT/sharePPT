@@ -31,9 +31,7 @@
 
 ---
 
-<!-- ## Git 文件的三种状态 -->
-
-@snap[west span-50]
+## Git 文件的三种状态
 
 > 对于任何一个文件，在 Git 内都只有三种状态：已提交（committed） 已修改（modified） 已暂存（staged）
 
@@ -45,8 +43,4 @@
 
 - 文件流转的三个工作区域：Git 的工作目录，暂存区域，以及本地仓库。
 
-@snapend
-
-@snap[east span-50]
 ![](assets/img/picture.jpg)
-@snapend
