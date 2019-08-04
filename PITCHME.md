@@ -33,7 +33,7 @@
 
 ## Git 文件的三种状态
 
-@snap[east span-50]
+@snap[west span-50]
 
 > 对于任何一个文件，在 Git 内都只有三种状态：已提交（committed） 已修改（modified） 已暂存（staged）
 
