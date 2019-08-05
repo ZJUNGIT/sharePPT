@@ -77,15 +77,15 @@
 
 3. 配置 git
 
-3.1 git config -- global user.name "github 的用户名"
+   3.1 git config -- global user.name "github 的用户名"
 
-3.2 git config -- global user.email "github 的邮箱
+   3.2 git config -- global user.email "github 的邮箱
 
 4. 生成秘钥，具体方法如下一页
 
-> cd ~/.ssh
-> ssh-keygen -t rsa -C ”github 用户名”
-> cat id_rsa.pub // 查看公钥，把公钥招贴到 github 中 Settings---> SSH and GPG keys 中
+   4.1cd ~/.ssh
+   4.2 ssh-keygen -t rsa -C ”github 用户名”
+   4.3cat id_rsa.pub // 查看公钥，把公钥招贴到 github 中 Settings---> SSH and GPG keys 中
 
 ---
 
@@ -93,93 +93,77 @@
 
 1. 在本地创建一个仓库，将本地文件推送到远程仓库
 
-- 1）本地创建一个文件夹
-- 2）cd /文件夹，做如下操作
+   1.1 本地创建一个文件夹
+   1.2 cd /文件夹，做如下操作
 
-> git init // 仓库初始化
-> touch README.md // 创建文件
-> git add README.md // 将当前目录内的所有文件添加到暂存区，加入跟踪
-> git commit -am “注释” //提交到本地库
-> git remote add origin https://github.com/用户名/仓库地址 //添加远程仓库
-> git push -u origin master //提交到远程仓库
+   1.2.1 git init // 仓库初始化
+   1.2.2 touch README.md // 创建文件
+   1.2.3 git add README.md // 将当前目录内的所有文件添加到暂存区，加入跟踪
+   1.2.4 git commit -am “注释” //提交到本地库
+   1.2.5 git remote add origin https://github.com/用户名/仓库地址 //添加远程仓库
+   1.2.6 git push -u origin master //提交到远程仓库
 
 2. 从已有的仓库克隆
 
-- 1）使用 https 传输协议
-  > git clone https://github.com/用户名/仓库地址（可以从github上复制仓库地址）
-- 2）使用 ssh 传输协议
-  > git clone git@github.com:用户名/仓库地址
+   2.1 使用 https 传输协议：git clone https://github.com/用户名/仓库地址（可以从github上复制仓库地址）
+
+   2.2 使用 ssh 传输协议：git clone git@github.com:用户名/仓库地址
 
 ---
 
 ## 基本操作
 
-1. 添加文件到暂存区
+1.  添加文件到暂存区
+    git add <filename> ----提交单个文件
+    git add . ----提交所有文件
 
-- git add <filename> ----提交单个文件
-- git add . ----提交所有文件
+2.  将暂存区中的内容提交至版本库
 
-2. 将暂存区中的内容提交至版本库
+         git commit –m ‘代码提交信息’
 
-- git commit –m ‘代码提交信息’
-  注意：一定要使用-m 参数加入注释，认真描述本次的提交具体做了些什么，这对于以后我们查询历史记录非常重要。
+    注意：一定要使用-m 参数加入注释，认真描述本次的提交具体做了些什么，这对于以后我们查询历史记录非常重要。
 
-3. 对于已经跟踪过的，不是新增的文件可以做如下操作
+3.  对于已经跟踪过的，不是新增的文件可以做如下操作
 
-- git commit –am ‘代码提交信息’
-  如果觉得使用暂存区过于繁琐，可以在 commit 时直接使用-a 参数，Git 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过 git add 步骤。
+    git commit –am ‘代码提交信息’
+    如果觉得使用暂存区过于繁琐，可以在 commit 时直接使用-a 参数，Git 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过 git add 步骤。
 
 ---
 
 4. 添加远程仓库
 
-   > git remote add origin https://github.com/用户名/仓库地址
+   git remote add origin https://github.com/用户名/仓库地址
 
-5. 把版本库的代码提交到远程仓库
+5. 把版本库的代码提交到远程仓库：git push -u origin 分支名称
 
-   > git push -u origin 分支名称
+6. 更新本地仓库到最新的改动：git pull
 
-6. 更新本地仓库到最新的改动
+7. 切换分支：git checkout 分支名
+8. 检查当前文件状态：git status
 
-   > git pull
-
-7. 切换分支：
-   > git checkout 分支名
-8. 检查当前文件状态
-
-   > git status
-
-9. 查看历史
-
-   > git log
+9. 查看历史： git log
 
 10. 查看目前是在那个分支
+    git branch
+    git branch –a //查看所有分支
 
-    > git branch
-    > git branch –a //查看所有分支
-
-11. 创建新分支并且切换到新分支
-
-    > git checkout –b 新分支名字
+11. 创建新分支并且切换到新分支： git checkout –b 新分支名字
 
 ---
 
 12. 合并分支
-
-> git merge 分支名
-> 项目中实例：
-> git checkout master // 切换到主分支
-> git branch // 查看当前的分支是不是 master
-> git merge 分支名
+    git merge 分支名
+    项目中实例：
+    git checkout master // 切换到主分支
+    git branch // 查看当前的分支是不是 master
+    git merge 分支名
 
 13. git remote 命令查看远程仓库的详情
-
-> git remote –v // 列出远程服务器清单
+    git remote –v // 列出远程服务器清单
 
 14. 推送代码到远程仓库
-
-> - git push origin 分支名
-> - git push –set-upstream origin 分支名 //第一次提交加入--set-upstream 设置跟踪后，以后直接使用 git push 就可以推送了
+    git push origin 分支名
+    git push –set-upstream origin 分支名 //第一次提交加入--set-upstream 设置跟踪后，以后直接使用 git push 就可以推送了
 
 ---
 
@@ -187,11 +171,11 @@
 
 15. 版本回退
 
-- git reset –hard HEAD^ // 回退到上一个版本
-- git reset –hard HEAD^^ // 回退到上上个版本
-- git reset –hard HEAD~100 // 回退到 100 个版本 之前
-
+1)git reset –hard HEAD^ // 回退到上一个版本
+2)git reset –hard HEAD^^ // 回退到上上个版本
+3)git reset –hard HEAD~100 // 回退到 100 个版本 之前
 ![](assets/img/picture2.png)
+4)git reset –hard 回退版本号 //回退到某个版本
 ![](assets/img/picture3.png)
 
 ---
