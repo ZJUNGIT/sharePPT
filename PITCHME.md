@@ -33,7 +33,7 @@
 
 ## Git 文件的三种状态
 
-> 对于任何一个文件，在 Git 内都只有三种状态：已提交（committed） 已修改（modified） 已暂存（staged）
+- 对于任何一个文件，在 Git 内都只有三种状态：已提交（committed） 已修改（modified） 已暂存（staged）
 
 1. 已提交表示该文件已经被安全地保存在本地数据库中了；
 
