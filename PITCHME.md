@@ -82,12 +82,9 @@
 
 4. 生成秘钥，具体方法如下一页
 
-```
-$ cd ~/.ssh
-$ ssh-keygen -t rsa -C ”github用户名”
-$ cat id_rsa.pub   // 查看公钥，把公钥招贴到github中Settings---> SSH and GPG keys中
-
-```
+- \$ cd ~/.ssh
+- \$ ssh-keygen -t rsa -C ”github 用户名”
+- \$ cat id_rsa.pub // 查看公钥，把公钥招贴到 github 中 Settings---> SSH and GPG keys 中
 
 ---
 
@@ -98,14 +95,12 @@ $ cat id_rsa.pub   // 查看公钥，把公钥招贴到github中Settings---> SSH
 - 1）本地创建一个文件夹
 - 2）cd /文件夹，做如下操作
 
-```
-$ git init             //   仓库初始化
-$ touch README.md     // 创建文件
-$ git add README.md   // 将当前目录内的所有文件添加到暂存区，加入跟踪
-$ git commit -am “注释” //提交到本地库
-$ git remote add origin https://github.com/用户名/仓库地址     //添加远程仓库
-$ git push -u origin master //提交到远程仓库
-```
+> - \$ git init // 仓库初始化
+> - \$ touch README.md // 创建文件
+> - \$ git add README.md // 将当前目录内的所有文件添加到暂存区，加入跟踪
+> - \$ git commit -am “注释” //提交到本地库
+> - \$ git remote add origin https://github.com/用户名/仓库地址 //添加远程仓库
+> - \$ git push -u origin master //提交到远程仓库
 
 2. 从已有的仓库克隆
 
@@ -120,24 +115,18 @@ $ git push -u origin master //提交到远程仓库
 
 1. 添加文件到暂存区
 
-```
-$ git add <filename>       ----提交单个文件
-$ git add .                ----提交所有文件
-```
+- \$ git add <filename> ----提交单个文件
+- \$ git add . ----提交所有文件
 
 2. 将暂存区中的内容提交至版本库
 
-```
-$ git commit –m ‘代码提交信息’
-注意：一定要使用-m参数加入注释，认真描述本次的提交具体做了些什么，这对于以后我们查询历史记录非常重要。
-```
+- \$ git commit –m ‘代码提交信息’
+  注意：一定要使用-m 参数加入注释，认真描述本次的提交具体做了些什么，这对于以后我们查询历史记录非常重要。
 
 3. 对于已经跟踪过的，不是新增的文件可以做如下操作
 
-```
-$ git commit –am ‘代码提交信息’
-如果觉得使用暂存区过于繁琐，可以在commit时直接使用-a参数，Git就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过git add步骤。
-```
+- \$ git commit –am ‘代码提交信息’
+  如果觉得使用暂存区过于繁琐，可以在 commit 时直接使用-a 参数，Git 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过 git add 步骤。
 
 ---
 
@@ -176,38 +165,29 @@ $ git commit –am ‘代码提交信息’
 
 12. 合并分支
 
-```
-$ git merge 分支名
+>- $ git merge 分支名
 项目中实例：
-$ git checkout master      // 切换到主分支
-$ git branch                     // 查看当前的分支是不是master
-$ git merge 分支名
-```
+>- $ git checkout master // 切换到主分支
+>- $ git branch   // 查看当前的分支是不是master
+>- $ git merge 分支名
 
 13. git remote 命令查看远程仓库的详情
 
-```
-$ git remote –v     // 列出远程服务器清单
-```
+>- git remote –v // 列出远程服务器清单
 
 14. 推送代码到远程仓库
 
-```
-$ git push origin 分支名
-$ git push –set-upstream origin 分支名       //第一次提交加入--set-upstream设置跟踪后，以后直接使用git push就可以推送了
-```
-
+>- $ git push origin 分支名
+>- $ git push –set-upstream origin 分支名 //第一次提交加入--set-upstream 设置跟踪后，以后直接使用 git push 就可以推送了
 ---
 
 ## 版本回退
 
 15. 版本回退
 
-```
-$ git reset –hard HEAD^   // 回退到上一个版本
-$ git reset –hard HEAD^^  // 回退到上上个版本
-$ git reset –hard HEAD~100  // 回退到100个版本 之前
-```
+>- git reset –hard HEAD^   // 回退到上一个版本
+>- git reset –hard HEAD^^ // 回退到上上个版本
+>- git reset –hard HEAD~100 // 回退到 100 个版本 之前
 
 ![](assets/img/picture2.png)
 ![](assets/img/picture3.png)
