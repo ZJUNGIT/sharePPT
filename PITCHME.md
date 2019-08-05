@@ -1,16 +1,3 @@
----?color=linear-gradient(180deg, #2e70ba 75%, #2e70ba 25%)
-@snap[west h3-white span-50]
-
-### git 使用介绍
-
-@snapend
-
-@snap[east span-50]
-![](assets/img/circle.png)
-@snapend
-
----
-
 ## Git 介绍
 
 - 1.什么是 Git：
