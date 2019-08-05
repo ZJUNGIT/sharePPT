@@ -84,7 +84,9 @@
 4. 生成秘钥，具体方法如下一页
 
    4.1cd ~/.ssh
+
    4.2 ssh-keygen -t rsa -C ”github 用户名”
+
    4.3cat id_rsa.pub // 查看公钥，把公钥招贴到 github 中 Settings---> SSH and GPG keys 中
 
 ---
@@ -94,13 +96,19 @@
 1. 在本地创建一个仓库，将本地文件推送到远程仓库
 
    1.1 本地创建一个文件夹
+
    1.2 cd /文件夹，做如下操作
 
    1.2.1 git init // 仓库初始化
+
    1.2.2 touch README.md // 创建文件
+
    1.2.3 git add README.md // 将当前目录内的所有文件添加到暂存区，加入跟踪
+
    1.2.4 git commit -am “注释” //提交到本地库
+
    1.2.5 git remote add origin https://github.com/用户名/仓库地址 //添加远程仓库
+
    1.2.6 git push -u origin master //提交到远程仓库
 
 2. 从已有的仓库克隆
@@ -114,7 +122,8 @@
 ## 基本操作
 
 1.  添加文件到暂存区
-    git add <filename> ----提交单个文件
+    git add filename ----提交单个文件
+
     git add . ----提交所有文件
 
 2.  将暂存区中的内容提交至版本库
@@ -139,6 +148,7 @@
 6. 更新本地仓库到最新的改动：git pull
 
 7. 切换分支：git checkout 分支名
+
 8. 检查当前文件状态：git status
 
 9. 查看历史： git log
@@ -153,17 +163,26 @@
 
 12. 合并分支
     git merge 分支名
+
     项目中实例：
+
     git checkout master // 切换到主分支
+
     git branch // 查看当前的分支是不是 master
+
     git merge 分支名
 
 13. git remote 命令查看远程仓库的详情
+
     git remote –v // 列出远程服务器清单
 
 14. 推送代码到远程仓库
+
     git push origin 分支名
-    git push –set-upstream origin 分支名 //第一次提交加入--set-upstream 设置跟踪后，以后直接使用 git push 就可以推送了
+
+    git push –set-upstream origin 分支名
+
+    //第一次提交加入--set-upstream 设置跟踪后，以后直接使用 git push 就可以推送了
 
 ---
 
@@ -172,10 +191,15 @@
 15. 版本回退
 
 1)git reset –hard HEAD^ // 回退到上一个版本
+
 2)git reset –hard HEAD^^ // 回退到上上个版本
+
 3)git reset –hard HEAD~100 // 回退到 100 个版本 之前
+
 ![](assets/img/picture2.png)
+
 4)git reset –hard 回退版本号 //回退到某个版本
+
 ![](assets/img/picture3.png)
 
 ---
@@ -183,6 +207,7 @@
 ## 图形化工具
 
 1. github Desktop：https://desktop.github.com/
+
 2. Sourcetree：https://www.sourcetreeapp.com/
 
 ![](assets/img/picture4.png)
