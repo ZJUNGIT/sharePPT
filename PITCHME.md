@@ -85,20 +85,17 @@
    1.1 本地创建一个文件夹
 
    1.2 cd /文件夹，做如下操作
-   @ul
+   1.2.1 git init // 仓库初始化
 
-   - 1.2.1 git init // 仓库初始化
+   1.2.2 touch README.md // 创建文件
 
-   - 1.2.2 touch README.md // 创建文件
+   1.2.3 git add README.md // 将当前目录内的所有文件添加到暂存区，加入跟踪
 
-   - 1.2.3 git add README.md // 将当前目录内的所有文件添加到暂存区，加入跟踪
+   1.2.4 git commit -am “注释” //提交到本地库
 
-   - 1.2.4 git commit -am “注释” //提交到本地库
+   1.2.5 git remote add origin https://github.com/用户名/仓库地址 //添加远程仓库
 
-   - 1.2.5 git remote add origin https://github.com/用户名/仓库地址 //添加远程仓库
-
-   - 1.2.6 git push -u origin master //提交到远程仓库
-     @ulend
+   1.2.6 git push -u origin master //提交到远程仓库
 
 2. 从已有的仓库克隆
 
