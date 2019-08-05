@@ -77,9 +77,9 @@
 
 3. 配置 git
 
-> 1） git config -- global user.name "github 的用户名"<br/>
+3.1 git config -- global user.name "github 的用户名"
 
-> 2） git config -- global user.email "github 的邮箱
+3.2 git config -- global user.email "github 的邮箱
 
 4. 生成秘钥，具体方法如下一页
 
