@@ -1,3 +1,5 @@
+@transition[zoom-in fade-out]
+
 ## Git 介绍
 
 - 1.什么是 Git：
