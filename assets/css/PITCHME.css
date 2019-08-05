@@ -13,3 +13,6 @@
 .reveal div {
   font-size: 16px;
 }
+.reveal img {
+  max-width: 50%;
+}
