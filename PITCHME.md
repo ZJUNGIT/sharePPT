@@ -64,7 +64,7 @@
 
 - 下载地址： https://git-scm.com/download
 
-![](assets/img/picture1.jpg)
+![](assets/img/picture1.png)
 
 ---
 
