@@ -70,11 +70,11 @@
 
 4. 生成秘钥，具体方法如下
 
-   4.1cd ~/.ssh
+   4.1 cd ~/.ssh
 
    4.2 ssh-keygen -t rsa -C ”github 用户名”
 
-   4.3cat id_rsa.pub // 查看公钥，把公钥招贴到 github 中 Settings---> SSH and GPG keys 中
+   4.3 cat id_rsa.pub // 查看公钥，把公钥招贴到 github 中 Settings---> SSH and GPG keys 中
 
 ---
 
@@ -87,17 +87,17 @@
    1.2 cd /文件夹，做如下操作
    @ul
 
-   - git init // 仓库初始化
+   - 1.2.1 git init // 仓库初始化
 
-   - touch README.md // 创建文件
+   - 1.2.2 touch README.md // 创建文件
 
-   - git add README.md // 将当前目录内的所有文件添加到暂存区，加入跟踪
+   - 1.2.3 git add README.md // 将当前目录内的所有文件添加到暂存区，加入跟踪
 
-   - git commit -am “注释” //提交到本地库
+   - 1.2.4 git commit -am “注释” //提交到本地库
 
-   - git remote add origin https://github.com/用户名/仓库地址 //添加远程仓库
+   - 1.2.5 git remote add origin https://github.com/用户名/仓库地址 //添加远程仓库
 
-   - git push -u origin master //提交到远程仓库
+   - 1.2.6 git push -u origin master //提交到远程仓库
      @ulend
 
 2. 从已有的仓库克隆
