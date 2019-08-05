@@ -77,14 +77,15 @@
 
 3. 配置 git
 
-- 1） git config -- global user.name "github 的用户名"
-- 2） git config -- global user.email "github 的邮箱
+> 1） git config -- global user.name "github 的用户名"
+
+> 2） git config -- global user.email "github 的邮箱
 
 4. 生成秘钥，具体方法如下一页
 
-- cd ~/.ssh
-- ssh-keygen -t rsa -C ”github 用户名”
-- cat id_rsa.pub // 查看公钥，把公钥招贴到 github 中 Settings---> SSH and GPG keys 中
+> cd ~/.ssh
+> ssh-keygen -t rsa -C ”github 用户名”
+> cat id_rsa.pub // 查看公钥，把公钥招贴到 github 中 Settings---> SSH and GPG keys 中
 
 ---
 
