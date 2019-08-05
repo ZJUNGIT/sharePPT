@@ -77,7 +77,7 @@
 
 3. 配置 git
 
-> 1） git config -- global user.name "github 的用户名"
+> 1） git config -- global user.name "github 的用户名"<br/>
 
 > 2） git config -- global user.email "github 的邮箱
 
