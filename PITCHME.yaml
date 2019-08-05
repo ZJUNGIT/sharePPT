@@ -37,6 +37,7 @@ layout: center
 # Doc: https://gitpitch.com/docs/settings/published
 #
 published: true
+transition: fade
 
 #
 # Twitter Card Settings [Pro Only]
