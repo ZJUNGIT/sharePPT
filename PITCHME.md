@@ -122,9 +122,9 @@
 ## 基本操作
 
 1.  添加文件到暂存区
-    git add filename ----提交单个文件
+    git add filename // 提交单个文件
 
-    git add . ----提交所有文件
+    git add . // 提交所有文件
 
 2.  将暂存区中的内容提交至版本库
 
@@ -139,56 +139,56 @@
 
 ---
 
-4. 添加远程仓库
+1. 添加远程仓库
 
    git remote add origin https://github.com/用户名/仓库地址
 
-5. 把版本库的代码提交到远程仓库：git push -u origin 分支名称
+2. 把版本库的代码提交到远程仓库：git push -u origin 分支名称
 
-6. 更新本地仓库到最新的改动：git pull
+3. 更新本地仓库到最新的改动：git pull
 
-7. 切换分支：git checkout 分支名
+4. 切换分支：git checkout 分支名
 
-8. 检查当前文件状态：git status
+5. 检查当前文件状态：git status
 
-9. 查看历史： git log
+6. 查看历史： git log
 
-10. 查看目前是在那个分支
-    git branch
-    git branch –a //查看所有分支
+7. 查看目前是在那个分支
+   git branch
+   git branch –a //查看所有分支
 
-11. 创建新分支并且切换到新分支： git checkout –b 新分支名字
+8. 创建新分支并且切换到新分支： git checkout –b 新分支名字
 
 ---
 
-12. 合并分支
-    git merge 分支名
+1. 合并分支
+   git merge 分支名
 
-    项目中实例：
+   项目中实例：
 
-    git checkout master // 切换到主分支
+   git checkout master // 切换到主分支
 
-    git branch // 查看当前的分支是不是 master
+   git branch // 查看当前的分支是不是 master
 
-    git merge 分支名
+   git merge 分支名
 
-13. git remote 命令查看远程仓库的详情
+2. git remote 命令查看远程仓库的详情
 
-    git remote –v // 列出远程服务器清单
+   git remote –v // 列出远程服务器清单
 
-14. 推送代码到远程仓库
+3. 推送代码到远程仓库
 
-    git push origin 分支名
+   git push origin 分支名
 
-    git push –set-upstream origin 分支名
+   git push –set-upstream origin 分支名
 
-    //第一次提交加入--set-upstream 设置跟踪后，以后直接使用 git push 就可以推送了
+   //第一次提交加入--set-upstream 设置跟踪后，以后直接使用 git push 就可以推送了
 
 ---
 
 ## 版本回退
 
-15. 版本回退
+1. 版本回退
 
 1)git reset –hard HEAD^ // 回退到上一个版本
 
